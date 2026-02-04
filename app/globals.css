@@ -24,3 +24,41 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Headings */
+.h2 {
+  @apply text-2xl font-semibold;
+}
+
+.p {
+  @apply text-base text-gray-700 dark:text-gray-300;
+}
+
+/* Lists */
+.ul {
+  @apply list-disc list-inside pl-4 space-y-1;
+}
+
+.ol {
+  @apply list-decimal list-inside pl-4 space-y-1;
+}
+
+/* Button */
+.btn {
+  @apply px-4 py-1.5 text-sm font-medium rounded-md transition;
+}
+.btn-active {
+  @apply bg-background border shadow-sm text-foreground;
+}
+.btn-inactive {
+  @apply bg-background/70 hover:text-foreground hover:bg-background;
+}
+
+/* Links */
+.a {
+  @apply text-blue-600;
+}
+
+.a:hover {
+  @apply underline;
+}
